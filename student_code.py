@@ -5,9 +5,6 @@ def shortest_path(M,start,goal):
     """
     Calculates the shortest path between start and goal in a given map using a* algorithm with euclidean distance heuristics
     
-    Time Complexity O(?)
-    Space Complexity O(?)
-    
     Args:
        M: Map(Map object)
        start(int): the start node id
@@ -52,9 +49,6 @@ def shortest_path(M,start,goal):
 def reconstruct_path(came_from, start, goal):
     """
     Return the shortest path travelled by a* algorithm
-    
-    Time Complexity O(1)
-    Space Complexity O(1)
     
     Args:
        came_from(dictionary): Linked-list of previously visited place

@@ -132,6 +132,7 @@ def calculate_distance(point1, point2):
     x1, y1 = point1[0], point1[1]
     x2, y2 = point2[0], point2[1]
     
-    distance = math.sqrt(((x1-x2)**2) + (y1-y2)**2) 
+    #distance = math.sqrt(((x1-x2)**2) + (y1-y2)**2) 
+    distance = abs(x1 - x2) + abs(y1 - y2) # working for our heuristic perfectly, faster than calculating square root above
     
     return distance
